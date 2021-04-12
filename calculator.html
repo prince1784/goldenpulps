@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <section>
+
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html> -->
+<html>  
+  
+<head>  
+    <link rel="stylesheet" href="calculator.css">
+  
+<title>Simple Javascript Calculator - Basic Arithmetic Operations</title>  
+
+  
+<!-- Aim: Write HTML Code Using JavaScript Functions To Perform Basic Arithmetic Operations. -->  
+<!-- 1. Take Two numbers from user say 'Number 1' and 'Number 2'. -->  
+<!-- 2. Perform Addition, Subtraction, Multiplication, Division and Modulus. -->  
+<!-- 3. Result must be displayed on same HTML Page when respective button is clicked. -->  
+<!-- 4. Use <input> tag (HTML Forms Concept) with onclick.-->  
+<!-- 5. Call individual Javascript Function, put them inside <head> tag only.-->  
+<!-- 6. Javascript Tutorial/Code For Computer Science Students. -->  
+<!-- 7. Tested and Written By (c) Gaurav Akrani. -->  
+  
+<script language="javascript" type="text/javascript">  
+function multiply(){  
+a=Number(document.calculator.number1.value);  
+b=Number(document.calculator.number2.value);  
+c=a*b;  
+document.calculator.total.value=c;  
+}  
+</script>  
+  
+<script language="javascript" type="text/javascript">  
+function addition(){  
+a=Number(document.calculator.number1.value);  
+b=Number(document.calculator.number2.value);  
+c=a+b;  
+document.calculator.total.value=c;  
+}  
+</script>  
+  
+<script language="javascript" type="text/javascript">  
+function subtraction(){  
+a=Number(document.calculator.number1.value);  
+b=Number(document.calculator.number2.value);  
+c=a-b;  
+document.calculator.total.value=c;  
+}  
+</script>  
+  
+<script language="javascript" type="text/javascript">  
+function division(){  
+a=Number(document.calculator.number1.value);  
+b=Number(document.calculator.number2.value);  
+c=a/b;  
+document.calculator.total.value=c;  
+}  
+</script>  
+    
+</head>  
+  
+<body>  
+    
+<div> <!-- Here result will be displayed. -->   
+Get Result: <input type="textarea" name="total">   
+</div>
+<div>
+<!-- Opening a HTML Form. -->   
+<form name="calculator"> 
+
+   
+  
+<!-- Here user will enter 1st number. -->   
+Operands:<input type="text"size="4"name="number1">   
+<!-- Here user will enter 2nd number. -->   
+<input type="text" size="4" name="number2">  </br> </br> 
+<!-- Here respective button when clicked, calls only respective artimetic function. -->   
+Operators:<input type="button" value="ADD" onclick="javascript:addition();">  
+<input type="button" value="SUB" onclick="javascript:subtraction();">  
+<input type="button" value="MUL" onclick="javascript:multiply();">  
+<input type="button" value="DIV" onclick="javascript:division();">    
+</form>  
+</div>
+  
+</body>  
+</html>
